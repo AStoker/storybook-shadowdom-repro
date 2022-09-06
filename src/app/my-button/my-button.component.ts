@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation, ElementRef } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, Input, Output, ViewEncapsulation, ElementRef } from '@angular/core';
 
 /**
  * @typedef {"primary" | "secondary" | "danger" | "primary-outline" | "secondary-outline" | "danger-outline" | "primary-text" | "secondary-text" | "danger-text"} ButtonType

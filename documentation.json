@@ -69,7 +69,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<h1>Storybook Shadow Dom Component Repro</h1>\n\n"
+            "templateData": "<h1>Storybook Shadow Dom Component Repro</h1>\n\n<app-my-button><mat-icon>home</mat-icon></app-my-button>\n\n<mat-icon>home</mat-icon>"
         },
         {
             "name": "ButtonComponent",
@@ -269,6 +269,614 @@
             "stylesData": ""
         },
         {
+            "name": "MyButtonComponent",
+            "id": "component-MyButtonComponent-e6843df2f7e1954be00b91ca2d8b784fb4ae827fb15e155055dc92e2cf466cfb56da84a6760e9f6f3f625f3e60e1f5b030a5258f33c5fcebd5cc5d57de26a009",
+            "file": "src/app/my-button/my-button.component.ts",
+            "encapsulation": [
+                "ViewEncapsulation.ShadowDom"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-my-button",
+            "styleUrls": [
+                "./my-button.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./my-button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "adoptedStyleSheet",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 2386,
+                            "end": 2439,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 344,
+                            "tagName": {
+                                "pos": 2387,
+                                "end": 2390,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "see"
+                            },
+                            "comment": "<p>://web.dev/constructable-stylesheets/</p>\n",
+                            "name": {
+                                "pos": 2391,
+                                "end": 2396,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 308,
+                                "name": {
+                                    "pos": 2391,
+                                    "end": 2396,
+                                    "flags": 4227072,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 79,
+                                    "escapedText": "https"
+                                }
+                            }
+                        },
+                        {
+                            "pos": 2439,
+                            "end": 2529,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 338,
+                            "tagName": {
+                                "pos": 2440,
+                                "end": 2445,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "param"
+                            },
+                            "comment": "<ul>\n<li>The adopted style sheet for the component</li>\n</ul>\n",
+                            "typeExpression": {
+                                "pos": 2446,
+                                "end": 2461,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 307,
+                                "type": {
+                                    "pos": 2447,
+                                    "end": 2460,
+                                    "flags": 4194304,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 1,
+                                    "kind": 177,
+                                    "typeName": {
+                                        "pos": 2447,
+                                        "end": 2460,
+                                        "flags": 4194304,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 79,
+                                        "escapedText": "CSSStyleSheet"
+                                    }
+                                }
+                            },
+                            "name": {
+                                "pos": 2463,
+                                "end": 2480,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "adoptedStyleSheet"
+                            },
+                            "isNameFirst": false,
+                            "isBracketed": true
+                        }
+                    ],
+                    "rawdescription": "\n\nThe adopted style sheet for the component (using Constructable Stylesheets)\nSee https://web.dev/constructable-stylesheets/\n",
+                    "description": "<p>The adopted style sheet for the component (using Constructable Stylesheets)\nSee <a href=\"https://web.dev/constructable-stylesheets/\">https://web.dev/constructable-stylesheets/</a></p>\n",
+                    "line": 71,
+                    "type": "CSSStyleSheet | undefined",
+                    "decorators": []
+                },
+                {
+                    "name": "ariaLabel",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 2185,
+                            "end": 2248,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 338,
+                            "tagName": {
+                                "pos": 2186,
+                                "end": 2191,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "param"
+                            },
+                            "comment": "<ul>\n<li>The aria-label for the button</li>\n</ul>\n",
+                            "typeExpression": {
+                                "pos": 2192,
+                                "end": 2200,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 307,
+                                "type": {
+                                    "pos": 2193,
+                                    "end": 2199,
+                                    "flags": 4194304,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 1,
+                                    "kind": 149
+                                }
+                            },
+                            "name": {
+                                "pos": 2202,
+                                "end": 2211,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "ariaLabel"
+                            },
+                            "isNameFirst": false,
+                            "isBracketed": true
+                        }
+                    ],
+                    "rawdescription": "\n\nThe aria-label for the button\n",
+                    "description": "<p>The aria-label for the button</p>\n",
+                    "line": 64,
+                    "type": "string | undefined",
+                    "decorators": []
+                },
+                {
+                    "name": "color",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 1774,
+                            "end": 1829,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 338,
+                            "tagName": {
+                                "pos": 1775,
+                                "end": 1780,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "param"
+                            },
+                            "comment": "<ul>\n<li>The color of the button</li>\n</ul>\n",
+                            "typeExpression": {
+                                "pos": 1781,
+                                "end": 1793,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 307,
+                                "type": {
+                                    "pos": 1782,
+                                    "end": 1792,
+                                    "flags": 4194304,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 1,
+                                    "kind": 177,
+                                    "typeName": {
+                                        "pos": 1782,
+                                        "end": 1792,
+                                        "flags": 4194304,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 79,
+                                        "escapedText": "ButtonType"
+                                    }
+                                }
+                            },
+                            "name": {
+                                "pos": 1794,
+                                "end": 1799,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "color"
+                            },
+                            "isNameFirst": false,
+                            "isBracketed": false
+                        }
+                    ],
+                    "rawdescription": "\n\nColor of the button\n",
+                    "description": "<p>Color of the button</p>\n",
+                    "line": 47,
+                    "type": "\"primary\" | \"secondary\" | \"danger\"",
+                    "decorators": []
+                },
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nWhether or not the button is disabled\n",
+                    "description": "<p>Whether or not the button is disabled</p>\n",
+                    "line": 58,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 1934,
+                            "end": 1983,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 338,
+                            "tagName": {
+                                "pos": 1935,
+                                "end": 1940,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "param"
+                            },
+                            "comment": "<ul>\n<li>Size of the button</li>\n</ul>\n",
+                            "typeExpression": {
+                                "pos": 1941,
+                                "end": 1953,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 307,
+                                "type": {
+                                    "pos": 1942,
+                                    "end": 1952,
+                                    "flags": 4194304,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 1,
+                                    "kind": 177,
+                                    "typeName": {
+                                        "pos": 1942,
+                                        "end": 1952,
+                                        "flags": 4194304,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 79,
+                                        "escapedText": "ButtonSize"
+                                    }
+                                }
+                            },
+                            "name": {
+                                "pos": 1954,
+                                "end": 1958,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "size"
+                            },
+                            "isNameFirst": false,
+                            "isBracketed": false
+                        }
+                    ],
+                    "rawdescription": "\n\nSize of the button\n",
+                    "description": "<p>Size of the button</p>\n",
+                    "line": 53,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                },
+                {
+                    "name": "styling",
+                    "defaultValue": "'basic'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 1593,
+                            "end": 1627,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 338,
+                            "tagName": {
+                                "pos": 1594,
+                                "end": 1599,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "param"
+                            },
+                            "comment": "",
+                            "typeExpression": {
+                                "pos": 1600,
+                                "end": 1615,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 307,
+                                "type": {
+                                    "pos": 1601,
+                                    "end": 1614,
+                                    "flags": 4194304,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 1,
+                                    "kind": 177,
+                                    "typeName": {
+                                        "pos": 1601,
+                                        "end": 1614,
+                                        "flags": 4194304,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 79,
+                                        "escapedText": "ButtonStyling"
+                                    }
+                                }
+                            },
+                            "name": {
+                                "pos": 1616,
+                                "end": 1623,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "styling"
+                            },
+                            "isNameFirst": false,
+                            "isBracketed": false
+                        }
+                    ],
+                    "rawdescription": "\n\nStyle of the button\nPossible values: basic, raised, stroked, flat, icon, circle, mini-circle\n",
+                    "description": "<p>Style of the button\nPossible values: basic, raised, stroked, flat, icon, circle, mini-circle</p>\n",
+                    "line": 41,
+                    "type": "\"basic\" | \"raised\" | \"stroked\" | \"flat\" | \"icon\" | \"circle\" | \"mini-circle\"",
+                    "decorators": []
+                },
+                {
+                    "name": "text",
+                    "defaultValue": "'Button'",
+                    "deprecated": true,
+                    "deprecationMessage": "Use content projection instead. This exists because of the stories and typescript requiring valid props. TODO: Remove this requirement",
+                    "jsdoctags": [
+                        {
+                            "pos": 961,
+                            "end": 1111,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 329,
+                            "tagName": {
+                                "pos": 962,
+                                "end": 972,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "deprecated"
+                            },
+                            "comment": "<p>Use content projection instead. This exists because of the stories and typescript requiring valid props. TODO: Remove this requirement</p>\n"
+                        }
+                    ],
+                    "rawdescription": "\n\nButton contents\n",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 28,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 1269,
+                            "end": 1297,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 338,
+                            "tagName": {
+                                "pos": 1270,
+                                "end": 1275,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "param"
+                            },
+                            "comment": "",
+                            "typeExpression": {
+                                "pos": 1276,
+                                "end": 1288,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 307,
+                                "type": {
+                                    "pos": 1277,
+                                    "end": 1287,
+                                    "flags": 4194304,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 1,
+                                    "kind": 177,
+                                    "typeName": {
+                                        "pos": 1277,
+                                        "end": 1287,
+                                        "flags": 4194304,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 79,
+                                        "escapedText": "ButtonType"
+                                    }
+                                }
+                            },
+                            "name": {
+                                "pos": 1289,
+                                "end": 1293,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "originalKeywordKind": 151,
+                                "escapedText": "type"
+                            },
+                            "isNameFirst": false,
+                            "isBracketed": false
+                        }
+                    ],
+                    "rawdescription": "\n\nType of button. Automatically styles the button to match the type. This will override other bindings.\n",
+                    "description": "<p>Type of button. Automatically styles the button to match the type. This will override other bindings.</p>\n",
+                    "line": 34,
+                    "type": "\"primary\" | \"secondary\" | \"danger\" | \"primary-outline\" | \"secondary-outline\" | \"danger-outline\" | \"primary-text\" | \"secondary-text\" | \"danger-text\" | undefined",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nOptional click handler\n",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 76,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "el",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "HTMLElement",
+                    "optional": false,
+                    "description": "",
+                    "line": 22,
+                    "modifierKind": [
+                        121
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngAfterViewInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 148,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n\n",
+            "type": "component",
+            "sourceCode": "import { AfterViewInit, Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation, ElementRef } from '@angular/core';\n\n/**\n * @typedef {\"primary\" | \"secondary\" | \"danger\" | \"primary-outline\" | \"secondary-outline\" | \"danger-outline\" | \"primary-text\" | \"secondary-text\" | \"danger-text\"} ButtonType\n * @typedef { \"basic\" | \"raised\" |  \"stroked\" | \"flat\" | \"icon\" | \"circle\" | \"mini-circle\"} ButtonStyling\n * @typedef {\"small\" | \"medium\" | \"large\"} ButtonSize\n */\n\n/*\nNote: material design has \"accent\" and \"secondary\" really meaning the same thing. We call it \"secondary\", but styling is referred to as \"accent\"\n*/\n\n@Component({\n  selector: 'app-my-button',\n  templateUrl: './my-button.component.html',\n  styleUrls: ['./my-button.component.scss'],\n  encapsulation: ViewEncapsulation.ShadowDom\n})\nexport class MyButtonComponent implements AfterViewInit {\n  // chosenIcon = icons.faPersonRunning;\n\n  private el: HTMLElement;\n\n  /**\n   * Button contents\n   * @deprecated Use content projection instead. This exists because of the stories and typescript requiring valid props. TODO: Remove this requirement\n   */\n  @Input() text: string = 'Button';\n\n  /**\n   * Type of button. Automatically styles the button to match the type. This will override other bindings.\n   * @param {ButtonType} type\n   */\n  @Input() type: \"primary\" | \"secondary\" | \"danger\" | \"primary-outline\" | \"secondary-outline\" | \"danger-outline\" | \"primary-text\" | \"secondary-text\" | \"danger-text\" | undefined;\n\n  /**\n   * Style of the button\n   * Possible values: basic, raised, stroked, flat, icon, circle, mini-circle\n   * @param {ButtonStyling} styling\n   */\n  @Input() styling: \"basic\" | \"raised\" | \"stroked\" | \"flat\" | \"icon\" | \"circle\" | \"mini-circle\" = 'basic';\n\n  /**\n   * Color of the button\n   * @param {ButtonType} color - The color of the button\n   */\n  @Input() color: 'primary' | 'secondary' | 'danger' = 'primary';\n\n  /**\n   * Size of the button\n   * @param {ButtonSize} size - Size of the button\n   */\n  @Input() size: \"small\" | \"medium\" | \"large\" = 'medium';\n\n  /**\n   * Whether or not the button is disabled\n   */\n  @Input() disabled: boolean = false;\n\n  /**\n   * The aria-label for the button\n   * @param {string} [ariaLabel] - The aria-label for the button\n   */\n  @Input() ariaLabel: string | undefined;\n\n  /**\n   * The adopted style sheet for the component (using Constructable Stylesheets)\n   * @see https://web.dev/constructable-stylesheets/\n   * @param {CSSStyleSheet} [adoptedStyleSheet] - The adopted style sheet for the component\n   */\n  @Input() adoptedStyleSheet: CSSStyleSheet | undefined;\n\n  /**\n   * Optional click handler\n   */\n  @Output() onClick = new EventEmitter<Event>(); // TODO: It appears that Storybook looks for an 'on*' event to track actions, which goes against Angular linting rules\n\n  constructor(el: ElementRef) {\n    this.el = el.nativeElement;\n  }\n\n\n  /**\n   * Get color based off button type or specific color\n   */\n  get buttonColor(): string {\n    switch (this.type) {\n      case 'primary':\n      case 'primary-outline':\n      case 'primary-text':\n        return 'primary';\n      case 'secondary':\n      case 'secondary-outline':\n      case 'secondary-text':\n        return 'accent';\n      case 'danger':\n      case 'danger-outline':\n      case 'danger-text':\n        return 'warn';\n      default:\n        //Translate \"secondary\" to \"accent\" and \"danger\" to \"warn\" for material\n        return this.color == 'secondary' ? 'accent'\n          : this.color == 'danger' ? 'warn'\n            : this.color;\n    }\n  }\n\n  /**\n   * Get styling based off button type or specific styling\n   */\n  get buttonStyling(): string {\n    switch (this.type) {\n      case 'primary':\n      case 'secondary':\n      case 'danger':\n        return 'flat';\n      case 'primary-outline':\n      case 'secondary-outline':\n      case 'danger-outline':\n        return 'stroked';\n      case 'primary-text':\n      case 'secondary-text':\n      case 'danger-text':\n        return 'basic';\n      default:\n        //If the styling is circle, but we've also set the size to small, then we want to use mini-circle. Warn in the console that this isn't good practice\n        if (this.styling == 'circle' && this.size == 'small') {\n          console.warn('Using a \"small\" sized circle button is not recommended. Use a mini-circle button instead.');\n          return 'mini-circle';\n        }\n        return this.styling;\n    }\n  }\n\n  get buttonSizeClass(): string {\n    switch (this.size) {\n      case 'small':\n        return 'sf-button__small';\n      case 'medium':\n        return 'sf-button__medium';\n      case 'large':\n        return 'sf-button__large';\n      default:\n        return 'sf-button__medium';\n    }\n  }\n\n  ngAfterViewInit(): void {\n    // debugger;\n    //If we have an adoptedStyleSheet, then add it to the shadow root\n    if (this.adoptedStyleSheet && this.el.shadowRoot) {\n      let shadowRoot = this.el.shadowRoot;\n      shadowRoot.adoptedStyleSheets = [this.adoptedStyleSheet];\n    }\n  }\n\n}",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@use '@angular/material' as mat;\r\n\r\n@include mat.core();\r\n@include mat.strong-focus-indicators((\r\n  border-style: dotted,\r\n  border-width: 4px,\r\n  border-radius: 2px,\r\n));\r\n\r\n$my-primary: mat.define-palette(mat.$indigo-palette, 500);\r\n$my-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);\r\n\r\n$my-theme: mat.define-light-theme((\r\n color: (\r\n   primary: $my-primary,\r\n   accent: $my-accent,\r\n )\r\n));\r\n\r\n@include mat.all-component-themes($my-theme);\r\n@include mat.strong-focus-indicators-theme(purple);",
+                    "styleUrl": "./my-button.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "el",
+                        "type": "ElementRef",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 76,
+                "jsdoctags": [
+                    {
+                        "name": "el",
+                        "type": "ElementRef",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "AfterViewInit"
+            ],
+            "accessors": {
+                "buttonColor": {
+                    "name": "buttonColor",
+                    "getSignature": {
+                        "name": "buttonColor",
+                        "type": "string",
+                        "returnType": "string",
+                        "line": 86,
+                        "rawdescription": "\n\nGet color based off button type or specific color\n",
+                        "description": "<p>Get color based off button type or specific color</p>\n"
+                    }
+                },
+                "buttonStyling": {
+                    "name": "buttonStyling",
+                    "getSignature": {
+                        "name": "buttonStyling",
+                        "type": "string",
+                        "returnType": "string",
+                        "line": 111,
+                        "rawdescription": "\n\nGet styling based off button type or specific styling\n",
+                        "description": "<p>Get styling based off button type or specific styling</p>\n"
+                    }
+                },
+                "buttonSizeClass": {
+                    "name": "buttonSizeClass",
+                    "getSignature": {
+                        "name": "buttonSizeClass",
+                        "type": "string",
+                        "returnType": "string",
+                        "line": 135
+                    }
+                }
+            },
+            "templateData": "<!--\n  Angular is super weird regarding dynamic attributes (dynamic attribute directives): https://github.com/angular/components/issues/15367\n  They require us to write a bunch of if statements to change the attributes\n\n  case 'basic':\n        return 'mat-button';\n      case 'raised':\n        return 'mat-raised-button';\n      case 'stroked':\n        return 'mat-stroked-button';\n      case 'flat':\n        return 'mat-flat-button';\n      case 'icon':\n        return 'mat-icon-button';\n      case 'circle':\n        return 'mat-fab';\n      case 'mini-circle':\n        return 'mat-mini-fab';\n      default:\n        return 'mat-button';\n-->\n<!-- <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"\n      rel=\"stylesheet\"> -->\n\n<ng-template #content>\n  <ng-content></ng-content>\n</ng-template>\n\n\n<button\n  *ngIf=\"buttonStyling === 'basic'\"\n  mat-button\n  class=\"sf-button\"\n  [class]=\"buttonSizeClass\"\n  [color]=\"buttonColor\"\n  [disabled]=\"disabled\"\n  [attr.aria-label]=\"ariaLabel\"\n  (click)=\"onClick.emit($event)\"\n>\n  <ng-container *ngTemplateOutlet=\"content\"></ng-container>\n</button>\n<button\n  *ngIf=\"buttonStyling === 'raised'\"\n  mat-raised-button\n  class=\"sf-button\"\n  [class]=\"buttonSizeClass\"\n  [color]=\"buttonColor\"\n  [disabled]=\"disabled\"\n  [attr.aria-label]=\"ariaLabel\"\n  (click)=\"onClick.emit($event)\"\n>\n  <ng-container *ngTemplateOutlet=\"content\"></ng-container>\n</button>\n<button\n  *ngIf=\"buttonStyling === 'stroked'\"\n  mat-stroked-button\n  class=\"sf-button\"\n  [class]=\"buttonSizeClass\"\n  [color]=\"buttonColor\"\n  [disabled]=\"disabled\"\n  [attr.aria-label]=\"ariaLabel\"\n  (click)=\"onClick.emit($event)\"\n>\n  <ng-container *ngTemplateOutlet=\"content\"></ng-container>\n</button>\n<button\n  *ngIf=\"buttonStyling === 'flat'\"\n  mat-flat-button\n  class=\"sf-button\"\n  [class]=\"buttonSizeClass\"\n  [color]=\"buttonColor\"\n  [disabled]=\"disabled\"\n  [attr.aria-label]=\"ariaLabel\"\n  (click)=\"onClick.emit($event)\"\n>\n  <ng-container *ngTemplateOutlet=\"content\"></ng-container>\n</button>\n<button\n  *ngIf=\"buttonStyling === 'icon'\"\n  mat-icon-button\n  class=\"sf-button\"\n  [class]=\"buttonSizeClass\"\n  [color]=\"buttonColor\"\n  [disabled]=\"disabled\"\n  [attr.aria-label]=\"ariaLabel\"\n  (click)=\"onClick.emit($event)\"\n>\n  <ng-container *ngTemplateOutlet=\"content\"></ng-container>\n\n</button>\n<button\n  *ngIf=\"buttonStyling === 'circle'\"\n  mat-fab\n  class=\"sf-button\"\n  [class]=\"buttonSizeClass\"\n  [color]=\"buttonColor\"\n  [disabled]=\"disabled\"\n  [attr.aria-label]=\"ariaLabel\"\n  (click)=\"onClick.emit($event)\"\n>\n  <ng-container *ngTemplateOutlet=\"content\"></ng-container>\n</button>\n<button\n  *ngIf=\"buttonStyling === 'mini-circle'\"\n  mat-mini-fab\n  class=\"sf-button\"\n  [class]=\"buttonSizeClass\"\n  [color]=\"buttonColor\"\n  [disabled]=\"disabled\"\n  [attr.aria-label]=\"ariaLabel\"\n  (click)=\"onClick.emit($event)\"\n>\n  <ng-container *ngTemplateOutlet=\"content\"></ng-container>\n</button>\n"
+        },
+        {
             "name": "PageComponent",
             "id": "component-PageComponent-7126d8c2607c946741c651482413b43feb72b2d63cac9d3ac173fde206a5e635eb4cdbf7ca7ac9327c7d4d05cf7ef619144c34c11609ad677081d0ee4e855064",
             "file": "src/stories/page.component.ts",
@@ -352,13 +960,13 @@
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-2ec58e7a32463b9b6cd970cb31e08e29029a47873b1b978b2bb334fc7975f6f5b3557f06f1d8edb8d9117c1bc37b26d4301c2a5e8ccced6f4a56dde5c6a98af4",
+            "id": "module-AppModule-8759a583e501fc78adeffdca91cb773f4354040c017fe07ec2945901732b144c340480b612d2735ae507a6d2e92d4e6c49f22240ffd6769a3140b9d7ae6f8b23",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppComponent } from './app.component';\n\n@NgModule({\n  declarations: [\n    AppComponent\n  ],\n  imports: [\n    BrowserModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\n\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatIconModule } from '@angular/material/icon';\n\nimport { AppComponent } from './app.component';\nimport { MyButtonComponent } from './my-button/my-button.component';\n\nconst materialModules = [\n  MatButtonModule,\n  MatIconModule,\n];\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    MyButtonComponent\n  ],\n  imports: [\n    BrowserModule,\n    BrowserAnimationsModule,\n    ...materialModules\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -369,6 +977,9 @@
                     "elements": [
                         {
                             "name": "AppComponent"
+                        },
+                        {
+                            "name": "MyButtonComponent"
                         }
                     ]
                 },
@@ -476,6 +1087,16 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "materialModules",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.module.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[\n  MatButtonModule,\n  MatIconModule,\n]"
             },
             {
                 "name": "Primary",
@@ -711,6 +1332,18 @@
                     "type": "Story<Page>",
                     "defaultValue": "(args: Page) => ({\n  props: args,\n})"
                 }
+            ],
+            "src/app/app.module.ts": [
+                {
+                    "name": "materialModules",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.module.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[\n  MatButtonModule,\n  MatIconModule,\n]"
+                }
             ]
         },
         "groupedFunctions": {},
@@ -719,7 +1352,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 4,
+        "count": 6,
         "status": "low",
         "files": [
             {
@@ -730,6 +1363,25 @@
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
                 "status": "low"
+            },
+            {
+                "filePath": "src/app/app.module.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "materialModules",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/my-button/my-button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MyButtonComponent",
+                "coveragePercent": 69,
+                "coverageCount": "9/13",
+                "status": "good"
             },
             {
                 "filePath": "src/environments/environment.prod.ts",

@@ -1,3 +1,11 @@
-<h1>Storybook Shadow Dom Component Repro</h1>
-
-<app-my-button>Test</app-my-button>
+<section class="container">
+  <h1>Storybook Shadow Dom Component Repro</h1>
+  
+  <app-my-button styling="flat">Test</app-my-button>
+  
+  <app-my-button styling="icon">
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+  </app-my-button>
+  
+  <mat-icon>home</mat-icon>
+</section>
