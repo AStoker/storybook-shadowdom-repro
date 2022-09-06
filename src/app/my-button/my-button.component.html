@@ -1,0 +1,114 @@
+<!--
+  Angular is super weird regarding dynamic attributes (dynamic attribute directives): https://github.com/angular/components/issues/15367
+  They require us to write a bunch of if statements to change the attributes
+
+  case 'basic':
+        return 'mat-button';
+      case 'raised':
+        return 'mat-raised-button';
+      case 'stroked':
+        return 'mat-stroked-button';
+      case 'flat':
+        return 'mat-flat-button';
+      case 'icon':
+        return 'mat-icon-button';
+      case 'circle':
+        return 'mat-fab';
+      case 'mini-circle':
+        return 'mat-mini-fab';
+      default:
+        return 'mat-button';
+-->
+<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> -->
+
+<ng-template #content>
+  <ng-content></ng-content>
+</ng-template>
+
+
+<button
+  *ngIf="buttonStyling === 'basic'"
+  mat-button
+  class="sf-button"
+  [class]="buttonSizeClass"
+  [color]="buttonColor"
+  [disabled]="disabled"
+  [attr.aria-label]="ariaLabel"
+  (click)="onClick.emit($event)"
+>
+  <ng-container *ngTemplateOutlet="content"></ng-container>
+</button>
+<button
+  *ngIf="buttonStyling === 'raised'"
+  mat-raised-button
+  class="sf-button"
+  [class]="buttonSizeClass"
+  [color]="buttonColor"
+  [disabled]="disabled"
+  [attr.aria-label]="ariaLabel"
+  (click)="onClick.emit($event)"
+>
+  <ng-container *ngTemplateOutlet="content"></ng-container>
+</button>
+<button
+  *ngIf="buttonStyling === 'stroked'"
+  mat-stroked-button
+  class="sf-button"
+  [class]="buttonSizeClass"
+  [color]="buttonColor"
+  [disabled]="disabled"
+  [attr.aria-label]="ariaLabel"
+  (click)="onClick.emit($event)"
+>
+  <ng-container *ngTemplateOutlet="content"></ng-container>
+</button>
+<button
+  *ngIf="buttonStyling === 'flat'"
+  mat-flat-button
+  class="sf-button"
+  [class]="buttonSizeClass"
+  [color]="buttonColor"
+  [disabled]="disabled"
+  [attr.aria-label]="ariaLabel"
+  (click)="onClick.emit($event)"
+>
+  <ng-container *ngTemplateOutlet="content"></ng-container>
+</button>
+<button
+  *ngIf="buttonStyling === 'icon'"
+  mat-icon-button
+  class="sf-button"
+  [class]="buttonSizeClass"
+  [color]="buttonColor"
+  [disabled]="disabled"
+  [attr.aria-label]="ariaLabel"
+  (click)="onClick.emit($event)"
+>
+  <ng-container *ngTemplateOutlet="content"></ng-container>
+
+</button>
+<button
+  *ngIf="buttonStyling === 'circle'"
+  mat-fab
+  class="sf-button"
+  [class]="buttonSizeClass"
+  [color]="buttonColor"
+  [disabled]="disabled"
+  [attr.aria-label]="ariaLabel"
+  (click)="onClick.emit($event)"
+>
+  <ng-container *ngTemplateOutlet="content"></ng-container>
+</button>
+<button
+  *ngIf="buttonStyling === 'mini-circle'"
+  mat-mini-fab
+  class="sf-button"
+  [class]="buttonSizeClass"
+  [color]="buttonColor"
+  [disabled]="disabled"
+  [attr.aria-label]="ariaLabel"
+  (click)="onClick.emit($event)"
+>
+  <ng-container *ngTemplateOutlet="content"></ng-container>
+</button>
