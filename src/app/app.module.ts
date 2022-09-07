@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
 import { MyButtonComponent } from './my-button/my-button.component';
+import { SlotButtonComponent } from './slot-button/slot-button.component';
 
 const materialModules = [
   MatButtonModule,
@@ -17,7 +18,8 @@ const materialModules = [
 @NgModule({
   declarations: [
     AppComponent,
-    MyButtonComponent
+    MyButtonComponent,
+    SlotButtonComponent
   ],
   imports: [
     BrowserModule,
